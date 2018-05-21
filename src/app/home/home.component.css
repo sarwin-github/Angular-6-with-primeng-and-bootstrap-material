@@ -1,0 +1,184 @@
+.md-checkbox {
+  position: relative;
+  margin: 16px 0;
+  text-align: left;
+}
+.md-checkbox.md-checkbox-inline {
+  display: inline-block;
+}
+.md-checkbox label {
+  cursor: pointer;
+}
+.md-checkbox label:before, .md-checkbox label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.md-checkbox label:before {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.md-checkbox input[type="checkbox"] {
+  outline: 0;
+  margin-right: 10px;
+  visibility: hidden;
+}
+.md-checkbox input[type="checkbox"]:checked + label:before {
+  background: rgba(120, 88, 173,1);
+  border: none;
+}
+.md-checkbox input[type="checkbox"]:checked + label:after {
+  transform: rotate(-45deg);
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+}
+.md-checkbox input[type="checkbox"]:disabled + label:before {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+.md-checkbox input[type="checkbox"]:disabled:checked + label:before {
+  background: rgba(0, 0, 0, 0.26);
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  background: #f0f0f0;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+section {
+  background: white;
+  margin: 0 auto;
+  padding: 4em;
+  max-width: 800px;
+}
+section h1 {
+  margin: 0 0 2em;
+}
+
+.bg-gradient-home{
+  background: rgba(207,76,255,1);
+background: -moz-linear-gradient(-45deg, rgba(207,76,255,1) 0%, rgba(17,53,138,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(207,76,255,1)), color-stop(100%, rgba(17,53,138,1)));
+background: -webkit-linear-gradient(-45deg, rgba(207,76,255,1) 0%, rgba(17,53,138,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(207,76,255,1) 0%, rgba(17,53,138,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(207,76,255,1) 0%, rgba(17,53,138,1) 100%);
+background: linear-gradient(135deg, rgba(207,76,255,1) 0%, rgba(17,53,138,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf4cff', endColorstr='#11358a', GradientType=1 );
+}
+
+th{
+  border: none !important;
+}
+
+.follower{
+  font-size: 35px !important;
+}
+
+.info-text-right{
+  font-size: 10px !important;
+}
+
+.bg-img{
+    position:relative;
+    margin:0 auto;
+    background-attachment: inherit; 
+    background-repeat: no-repeat;
+    height:auto !important;
+    width:100% !important;
+    min-height:100%;
+    padding-top: 0 !important;
+}
+
+.content{
+  opacity: 1 !important;
+}
+
+.showOverlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    background-color: rgba(0,0,0,0.2); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+    /*
+    -webkit-animation: animatebottom 0.5s; 
+       -moz-animation: animatebottom 0.5s;
+        -ms-animation: animatebottom 0.5s; 
+         -o-animation: animatebottom 0.5s; 
+            animation: animatebottom 0.5s; */
+}
+
+@keyframes animatebottom{
+    from { top:30%;    opacity:0}
+     to  { bottom:50%; opacity:1}
+ }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+td{
+  cursor: pointer !important;
+}
+
+.btn-activity{
+  background: rgba(98,39,217,1);
+}
+
+.btn-activity:hover{
+  background: rgba(120, 88, 173,1) !important;
+}
+
+.show-activity-feed{
+  -webkit-animation: animatebottom 0.5s; 
+       -moz-animation: animatebottom 0.5s;
+        -ms-animation: animatebottom 0.5s; 
+         -o-animation: animatebottom 0.5s; 
+            animation: animatebottom 0.5s; 
+}
+
