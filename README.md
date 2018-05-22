@@ -1,3 +1,5 @@
+![Alt text](https://github.com/sarwin-github/Angular-6-with-primeng-and-bootstrap-material/blob/master/2018-05-22_9-48-27.jpg?raw=true "Sample Image")
+
 # NotificationAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
