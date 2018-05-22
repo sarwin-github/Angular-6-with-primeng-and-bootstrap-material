@@ -12,11 +12,12 @@ import { HeaderComponent } from './shared/header/header.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
